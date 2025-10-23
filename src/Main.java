@@ -33,17 +33,17 @@ public class Main {
         }
         System.out.println("Задача 8");
         int cash = 29000;
-        int total = 1;
+        int total = 0;
         for (int i = 1; i <= 12; i++) {
-            total = total - 1 + cash;
+            total = total + cash;
             System.out.println("Месяц," + i + " сумма накоплений равна " + total + " рублей");
         }
         System.out.println("Задача 9");
         int cashmonth = 29000;
-        int totalmonth = 1;
+        int totalmonth = 0;
         for (int i = 1; i <= 12; i++) {
             totalmonth = totalmonth + totalmonth / 100;
-            totalmonth = totalmonth - 1 + cashmonth;
+            totalmonth = totalmonth  + cashmonth;
 
             System.out.println("Месяц," + i + " сумма накоплений равна " + totalmonth + " рублей");
         }
